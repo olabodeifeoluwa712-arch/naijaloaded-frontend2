@@ -1,0 +1,261 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .samuel {
+            background-color: red;
+            display: inline-block;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .paragraph2 {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+
+        }
+
+        .div {
+            display: flex;
+            justify-self: center;
+
+        }
+
+        .button {
+            display: flex;
+            justify-self: center;
+            background-color: green;
+            width: 50%;
+            padding: 10px;
+
+        }
+
+        .audio {
+            display: flex;
+            justify-self: center;
+        }
+
+        .image {
+            display: flex;
+            justify-self: center;
+            width: 60%;
+            margin: top 24px;;
+        }
+        .p2 {
+            display:inline;
+            
+        }
+
+
+        header div {
+            background: linear-gradient(to right, rgb(5, 190, 5), rgb(4, 125, 4));
+            padding: 10px;
+
+        }
+
+        nav {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+            margin-bottom: 8px;
+            justify-content: center;
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            gap: 7px;
+        }
+
+        body {
+            max-width: 600px;
+            margin: auto;
+            background-color: #e5e5e5;
+        }
+
+        .seection {
+            display: grid;
+            justify-content: center;
+            padding-top: 5px;
+            background-color: white;
+        }
+
+        .micheal {
+
+            display: flex;
+            gap: 120px;
+            margin-top: 30px;
+        }
+
+
+
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 2rem;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div>
+        <img data-perfmatters-preload=""
+            src="./images/naijaloadedlogo.png" width="180"
+            height="42" alt="Naijaloaded Logo" class="alignnone size-full wp-image-203">
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <img src="./images/home.png" alt="" width="40px">
+            </li>
+            <li>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAAD6+vr29vb8/PzJycnh4eHn5+eDg4PPz8+ysrJ1dXXq6urZ2dn09PRERERVVVUoKCh6enovLy9hYWGnp6eKioq4uLhXV1fV1dXBwcEXFxeYmJijo6NAQECSkpIPDw80NDRsbGwdHR1MTEwhISFBQUFfX19DPOgQAAAEl0lEQVR4nO3di3aiMBCA4YLcRETUIl5QxLrb93/Dbd3tVixIZoCEmTP/A+TwHRElaPLyIkmSJEmSJEmSJLHNcUwfwbB5hWWbPoYBm4QLy7L4vobTmXWLqdAvlpbFV+iEV+s7fsKvs5Op0M+XlsVX6GTJI4+VcLeq4fERRvm63sdD6GTvTTwWwnnwhEdfGB0bz04OQmf/2sYjLZwHZwUfWWGclko8qkKls5Ou0Nu8AXzkhJP0BOJRE7oXKI+U0Ct+IXxkhHblppafcIo5O+kI/Rx3dhIRdjg7SQgfp1yYCbuenSMX2tm2F95YhU1TLkyEUU9n50iFz6dc6AvbplyIC+P2KRfKQrUpF7pC1SkXosIYflNLSugOdnaOQuhtDkP7jArTxfA8o0Jbi0+EIhyhsEwL1sJg/vH9iK9wm900E6bCtzz6NzBP4Wz6PTBD4SKd3A/MTXgOvIeBeQm3+58DMxKu/19cKrER3l9cKvEQLsJJ48AMhOfN48WlEnnha83FpRJtYXmsvbhUoixc7VQGJiu8horHSlP4Vjy9uFSiKLy4kIHJCctj80dfbcSEqzl4YErCJMP88YyM8FD4uIGJCGEXl0oUhKc07jDw+IUB/OJSaeTCbdZ54DELlzny4lJpvMLGm3ZgYxXmvf3neqzC/g5krML+/jYvQm2JEJ0ItSVCdCLUlgjRiVBbIkQnQm2JEJ0ItSVCdCLUlgjRiVBbIkQnQm2JEJ0ItSVCdCLUlgjRiVBbIkQnQm2JEJ0ItSVCdCLUlgjRiVBbIkQnQm2JEJ0ItdWb0PZ37n7vTv24dmDawnhfJPdLLl6D0H+J2Aj9Y+2SdqeHJWzJCl3VpZSJCl319TJJCiPIYsMUhRnAR1K4AQEJCqGrmZMTFvUOPsI9FEhNOKlXMBICrzL0hJiVl2gJYZ+EFIWYfS9oCTHb6tAS/tjsl52wRAiHdjSHESIW4V8P7WgOI8zhwsvQjuYwQg8ubFtlccBQ32l+Q4EHg1sjoIQuVJgOrHgW7t4CuE9gOazheTihDftIbF8LdMCQd8A+BIhfEq2PsLMYnvrOLQavo5+hZ6JixbnSs/qCoMPUYb5U6T740t/TLGRd5rznSZuvNPsWvNXtuYX79EZq3X1dux7q+uypeSuzS08Lv3Wth+eH082P52tlsDf3/nPiyPP8+OsAnO7CjybzLF+9J9drsl0V4a7Lmpmd8sIg+f4YW8zS3YDP8bVn72d1b5jLlYnQU93akKjQV78VICl0IHPwFIVz0I0OQSFwBp6e8AgD0hOGQCA54RwKJCeEb89MTAh9E9ITIvZ/pyUEz9uSEyJ+T0BM2DqLQl6I2Uqcv9D0FuiwVH++e9fZ9DHDAv+6zrJeTR8zrClcaPI5Hyb4lzbgrlXGA99ZbEwfMbjaf0I0d6D1WfFZ1K66bwSPUcCBvppSu8z8DfBz5dz0sSJTvs0fxZMwVLHSV5u16WfRncraZ/SpnqFf2S0/tQuMPQ3rLydsvNFYHhn4bvnHmjviRdFxh7yRZe/CzftpfThbh+UpCdIpl1fvMecj08cgSZIkSZIkSZI0cH8ALkxEaFudtYYAAAAASUVORK5CYII="
+                    alt="" width="40px">
+            </li>
+            <li>
+                <img src="./images/album.png" alt="" width="35px">
+            </li>
+            <li> <img src="./images/mixtape.jpg" alt="" width="55px"></li>
+
+        </ul>
+        <p>
+        <ul>
+            <li>
+                <a href=""> Home</a>
+            </li>
+            <li> <a href="">Music</a></li>
+            <li><a href="">Album</a></li>
+            <li><a href="">Mixtape</a></li>
+        </ul>
+        </p>
+
+    </nav>
+</header>
+
+
+    <div>
+        <div class="paragraph2">
+            HIPHOP &nbsp;| GOSPEL&nbsp;| &nbsp;<select name="MORE" id="MORE">
+                <option value=""> MORE</option>
+                <option value=""> CONTACT US</option>
+                <option value=""> ADVERTISE HERE</option>
+            </select>
+        </div>
+        <div class="paragraph2">
+            NAIJA SONGS |&nbsp;GH SONGS | &nbsp;ZA SONGS
+        </div>
+        <div class="paragraph2">
+            <img src="./images/jamscity-ad.png" alt="">
+        </div>
+    </div>
+    <center>
+        <h2 class="samuel"> LATEST POSTS</h2>
+    </center>
+
+
+    <div class="seection">
+        <div>
+            <img src="./images/real jogodo.png" alt="" width="50%" class="image">
+        </div>
+        <p style="padding: 8px; line-height: 1.6;"> <b>“Jogodo”</b> by <b> Wizkid</b> ft <b>Asake</b> is a dazzling
+            Afrobeats anthem released in January 2026 as the lead single
+            from
+            their joint EP tittled REAL. Produced by Magicsticks, the song features catchy Yoruba and Pidgin lyrics
+            about
+            celebration, nightlife and uninhibited fun, with Wizkid’s smooth melodies and Asake’s energetic flair
+            blending
+            into a vibrant, chart topping groove.</p>
+        <div>
+            <a href="">
+                <input type="button" value="Download here" class="button"> <audio
+                    src="./audios/Wizkid-Ft-Asake-Jogodo.mp3" controls type="mp3/audio" class="audio"></audio></a>
+        </div>
+    </div>
+    <!--  next session -->
+    <class class="seection">
+        <div class="div-container">
+            <div>
+                <a href="./index.html"> <img class="img" src="./images/real jogodo.png" alt="" width="90"></a>
+                <p class="p2"><a href="./index.html"></a> Wizkid ftAsake- Jogodo </p>
+            </div>
+            <hr>
+            <div>
+                <a href=""> <img class="img" src="./images/meticulous.png" alt=""></a>
+                <p class="p2"><a href=""></a> Chella ft Young Clique-Meticulous </p>
+            </div>
+            <hr>
+            <div>
+                <img class="img" src="./images/backa butty.ong.jpg" alt="">
+                <p class="p2">Titaift Joeboy -Backa butty</p>
+            </div>
+            <hr>
+            <div>
+                <img class="img" src="./images/Ego.png" alt="">
+              <p class="p2"> Professor Onye Egwu- Ego Na Nwanyi </p>
+            </div>
+            <hr>
+        </div>
+    </class>
+    </main>
+    <footer>
+        <div style="text-align: center;">
+            <img data-perfmatters-preload=""
+                src="./images/naijaloadedlogo.png" width="180"
+                height="42" alt="Naijaloaded Logo" class="alignnone size-full wp-image-203">
+        </div>
+
+        <section class="micheal">
+            <div>
+                <a href="">
+                    <h3 style="color: green;">Hot Categories</h3>
+                </a>
+                <a href="#">
+                    <p style="color: green;"> DJ Mixtapes</p>
+                </a>
+                <a href="#">
+                    <p> Hip Hop</p>
+                </a>
+                <a href="#">
+                    <p>Gospel</p>
+                </a>
+                <a href="#">
+                    <p> Highlife</p>
+                </a>
+            </div>
+
+            <div>
+                <h3>Information</h3>
+                <a href="#">
+                    <p>About Us</p>
+                </a>
+                <a href="#">
+                    <p> Advertisement</p>
+                </a>
+                <a href="#">
+                    <p> Promote Music</p>
+                </a>
+                <a href="#">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
